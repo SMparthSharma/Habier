@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32238085676",
+    "project_id": "habier-1e0e6",
+    "storage_bucket": "habier-1e0e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32238085676:android:1a41d85d054d7d0b6c1389",
+        "android_client_info": {
+          "package_name": "com.example.habier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOMZTbvwEmp3vaEQTfaPXw87IYBrPsD78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
