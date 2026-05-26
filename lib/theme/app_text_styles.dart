@@ -57,9 +57,23 @@ class AppTextStyles {
         height: 1.3,
       );
 
+  static TextStyle get titleSm => TextStyle(
+        fontFamily: serif,
+        fontSize: AppSizes.textMd,
+        fontWeight: medium,
+        height: 1.3,
+      );
+
   // ───────────────────────────────────────────────────────────────────────────
   // Body Text
   // ───────────────────────────────────────────────────────────────────────────
+
+  static TextStyle get bodyLg => TextStyle(
+        fontFamily: sans,
+        fontSize: AppSizes.textLg,
+        fontWeight: regular,
+        height: 1.5,
+      );
 
   static TextStyle get bodyMd => TextStyle(
         fontFamily: sans,
@@ -73,6 +87,28 @@ class AppTextStyles {
         fontSize: AppSizes.textSm,
         fontWeight: regular,
         height: 1.5,
+      );
+
+  // ───────────────────────────────────────────────────────────────────────────
+  // Labels
+  // ───────────────────────────────────────────────────────────────────────────
+
+  static TextStyle get labelLg => TextStyle(
+        fontFamily: sans,
+        fontSize: AppSizes.textMd,
+        fontWeight: medium,
+      );
+
+  static TextStyle get labelMd => TextStyle(
+        fontFamily: sans,
+        fontSize: AppSizes.textSm,
+        fontWeight: medium,
+      );
+
+  static TextStyle get labelSm => TextStyle(
+        fontFamily: sans,
+        fontSize: AppSizes.textXs,
+        fontWeight: medium,
       );
 
   // ───────────────────────────────────────────────────────────────────────────
