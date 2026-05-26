@@ -1,40 +1,39 @@
 import 'package:flutter/material.dart';
 import 'app_sizes.dart';
 
-/// ---------------------------------------------------------------------------
-/// AppTextStyles
-///
-/// Centralized typography system for the app.
-/// Uses AppSizes for responsive font scaling.
-///
-/// Usage:
-///   style: AppTextStyles.titleLg
-/// ---------------------------------------------------------------------------
-
 class AppTextStyles {
   AppTextStyles._();
+
+  // ───────────────────────────────────────────────────────────────────────────
+  // Font Families
+  // ───────────────────────────────────────────────────────────────────────────
+
+  static const String serif = 'NotoSerif';
+  static const String sans = 'DMSans';
 
   // ───────────────────────────────────────────────────────────────────────────
   // Font Weights
   // ───────────────────────────────────────────────────────────────────────────
 
-  static const FontWeight light   = FontWeight.w300;
+  static const FontWeight light = FontWeight.w300;
   static const FontWeight regular = FontWeight.w400;
-  static const FontWeight medium  = FontWeight.w500;
+  static const FontWeight medium = FontWeight.w500;
   static const FontWeight semiBold = FontWeight.w600;
-  static const FontWeight bold    = FontWeight.w700;
+  static const FontWeight bold = FontWeight.w700;
 
   // ───────────────────────────────────────────────────────────────────────────
   // Display Styles
   // ───────────────────────────────────────────────────────────────────────────
 
   static TextStyle get displayLg => TextStyle(
+        fontFamily: serif,
         fontSize: AppSizes.textHuge,
         fontWeight: bold,
         height: 1.2,
       );
 
   static TextStyle get displayMd => TextStyle(
+        fontFamily: serif,
         fontSize: AppSizes.textXxl,
         fontWeight: bold,
         height: 1.2,
@@ -45,19 +44,15 @@ class AppTextStyles {
   // ───────────────────────────────────────────────────────────────────────────
 
   static TextStyle get titleLg => TextStyle(
+        fontFamily: serif,
         fontSize: AppSizes.textXl,
         fontWeight: bold,
         height: 1.3,
       );
 
   static TextStyle get titleMd => TextStyle(
+        fontFamily: serif,
         fontSize: AppSizes.textLg,
-        fontWeight: semiBold,
-        height: 1.3,
-      );
-
-  static TextStyle get titleSm => TextStyle(
-        fontSize: AppSizes.textMd,
         fontWeight: semiBold,
         height: 1.3,
       );
@@ -66,72 +61,43 @@ class AppTextStyles {
   // Body Text
   // ───────────────────────────────────────────────────────────────────────────
 
-  static TextStyle get bodyLg => TextStyle(
-        fontSize: AppSizes.textLg,
-        fontWeight: regular,
-        height: 1.5,
-      );
-
   static TextStyle get bodyMd => TextStyle(
+        fontFamily: sans,
         fontSize: AppSizes.textMd,
         fontWeight: regular,
         height: 1.5,
       );
 
   static TextStyle get bodySm => TextStyle(
+        fontFamily: sans,
         fontSize: AppSizes.textSm,
         fontWeight: regular,
         height: 1.5,
       );
 
   // ───────────────────────────────────────────────────────────────────────────
-  // Labels / Buttons
-  // ───────────────────────────────────────────────────────────────────────────
-
-  static TextStyle get labelLg => TextStyle(
-        fontSize: AppSizes.textMd,
-        fontWeight: medium,
-        height: 1.3,
-      );
-
-  static TextStyle get labelMd => TextStyle(
-        fontSize: AppSizes.textSm,
-        fontWeight: medium,
-        height: 1.3,
-      );
-
-  static TextStyle get labelSm => TextStyle(
-        fontSize: AppSizes.textXs,
-        fontWeight: medium,
-        height: 1.2,
-      );
-
-  // ───────────────────────────────────────────────────────────────────────────
   // Buttons
   // ───────────────────────────────────────────────────────────────────────────
 
-  static TextStyle get buttonLg => TextStyle(
-        fontSize: AppSizes.textMd,
-        fontWeight: semiBold,
-      );
-
   static TextStyle get buttonMd => TextStyle(
+        fontFamily: sans,
         fontSize: AppSizes.textSm,
         fontWeight: semiBold,
       );
 
   // ───────────────────────────────────────────────────────────────────────────
-  // Captions / Helper Text
+  // Caption
   // ───────────────────────────────────────────────────────────────────────────
 
   static TextStyle get caption => TextStyle(
+        fontFamily: sans,
         fontSize: AppSizes.textXs,
         fontWeight: regular,
         height: 1.4,
       );
 
   // ───────────────────────────────────────────────────────────────────────────
-  // Optional Color Helpers
+  // Color Helpers
   // ───────────────────────────────────────────────────────────────────────────
 
   static TextStyle white(TextStyle style) =>
